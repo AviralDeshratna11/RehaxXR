@@ -1,0 +1,13 @@
+.gradle/
+.gradle-user-home/
+.kotlin/
+.idea/
+local.properties
+**/build/
+tools/gradle*/
+tools/*.zip
+tools/__pycache__/
+*.jks
+tools/*.log
+tools/device-ui*.png
+deliverables/

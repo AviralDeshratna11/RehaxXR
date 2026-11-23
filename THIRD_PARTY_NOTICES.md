@@ -1,0 +1,30 @@
+# Model and asset notices
+
+Google MoveNet SinglePose Lightning float16 v4 is also bundled, unmodified.
+Author: Google. License: Apache-2.0 (included LICENSE-APACHE-2.0.txt).
+Source: https://tfhub.dev/google/lite-model/movenet/singlepose/lightning/tflite/float16/4?lite-format=tflite
+Model card: https://www.kaggle.com/models/google/movenet
+SHA-256: 0fac2226112d0371903ca86e3853cec24ef603a0b2f96f589b180f0ebdd135ab
+Input: uint8 RGB 192 x 192; output: 17 2D joints, no world-depth measurements.
+
+The additional Google MoveNet SinglePose Thunder float16 v4 model is distributed
+under Apache-2.0. Its original weights, official TensorFlow Hub source, SHA-256
+checksum and 2D-only capabilities are documented in
+`app/src/main/assets/THIRD_PARTY_NOTICES.txt` and `pose_models.json`.
+LiteRT and its GPU delegate use version 1.4.2. The Apache license is included.
+
+The stylised avatar (avatar.glb), its muscle-region patches (avatar_regions.json), the generator (tools/generate_assets.py) and the muscle catalogue were created for this project. They contain no downloaded or third-party art. These original assets are dedicated to the public domain under CC0-1.0; no attribution is required. Muscle regions are simplified surface approximations, not a medical anatomical model.
+
+The bundled model is Google's **MediaPipe Pose Landmarker Lite float16, version 1**:
+
+- Source: https://storage.googleapis.com/mediapipe-models/pose_landmarker/pose_landmarker_lite/float16/1/pose_landmarker_lite.task
+- SHA-256: `59929e1d1ee95287735ddd833b19cf4ac46d29bc7afddbbf6753c459690d574a`
+- Authors: Google / MediaPipe; BlazePose GHUM model card names Valentin Bazarevsky, Ivan Grishchenko, and Eduard Gabriel Bazavan.
+- Official model card: https://storage.googleapis.com/mediapipe-assets/Model%20Card%20BlazePose%20GHUM%203D.pdf
+- The model card states Apache License, Version 2.0. Retain attribution and the Apache license when redistributing. The task bundle contains Google's detector and landmark models; it has not been modified.
+
+MediaPipe, Filament, and AndroidX components are licensed under Apache-2.0. Kotlin is licensed under Apache-2.0. Gradle includes Apache-2.0 and third-party notices in its distribution. JUnit is EPL-1.0; the JVM JSON test dependency is public domain. Refer to each dependency's published license/NOTICE for additional transitive attributions. Preserve required notices in a distribution; this file is not an exhaustive transitive-license audit.
+
+Apache License, Version 2.0: https://www.apache.org/licenses/LICENSE-2.0
+
+No external production anatomical GLB is redistributed. A future licensed anatomical asset must have its rig hierarchy, axes, rest pose, skin weights, bone names, muscle region names, attribution, and redistribution conditions checked before integration.
